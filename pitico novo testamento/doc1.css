@@ -1,9 +1,16 @@
 header {
     background-color: rgba(114, 209, 143, 0.671);
+    display: block;
+ width: 99%;
+ height: 10px;
+ padding: 5px;
 }
 
 .container{
- position:absolute;
+ display: block;
+ width: 99%;
+ height: 10px;
+ padding: 5px;
 }
 
 
