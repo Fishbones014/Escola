@@ -2,6 +2,11 @@ header {
     background-color: rgba(114, 209, 143, 0.671);
 }
 
+.container{
+ position:absolute;
+}
+
+
 footer {
   padding: 3px;
   border-width: 1px;
