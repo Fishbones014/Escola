@@ -59,5 +59,9 @@ footer {
   border-width: 1px;
   border-style: ridge;
   border-color: black;
- background-color: var(--color-verdinho);  
+  background-color: var(--color-verdinho);  
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
 }
