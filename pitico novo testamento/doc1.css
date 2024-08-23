@@ -129,6 +129,19 @@ header nav ul li a {
   width: 50%;
  }
 
+
+ .img-section1{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+  gap:100px;
+ }
+
+ .img-section1 img {
+ width: 70%;
+ }
+
  .img-section2{
   display:flex;
   flex-direction:row;
@@ -138,11 +151,13 @@ header nav ul li a {
  }
 
  @media screen and (max-width: 768px){
-  figure{
-    width: 100%;
-    
+ img{
+    width: 100%; 
  }
  .img-section2{
+  flex-direction:column;
+ }
+ .img-section1{
   flex-direction:column;
  }
  }
@@ -156,7 +171,7 @@ footer {
   border-width: 1px;
   border-style: ridge;
   border-color: black;
-  background-color: var(--color-verdinho);  
+  background-image: linear-gradient(to right, rgb(25, 58, 41), #0130245d);   
   bottom: 0;
   position: fixed;
   width: 100%;
