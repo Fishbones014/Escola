@@ -1,0 +1,135 @@
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ece9e9; /* Cor de fundo da página */
+   
+}
+
+:root
+{
+    --cor1: #639379;
+    --cor2: #426968;
+    --cor3: #2d504c;
+    --cor4: rgb(167, 178, 184);
+    --cor-cinza: #ece9e9;
+    --cor-preto: #000000;
+    --cor-branco:#ffffff;
+
+  --fonte-padrao: sans-serif;
+
+}
+main
+{
+    margin: 0.6vw;
+ 
+}
+
+header .container
+{
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 4px var(--cor4);
+    height: 100px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 4%; 
+}
+.container img 
+{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+}
+
+.navbar 
+{
+    background-color: #ece9e9; /* Cor de fundo da navbar */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 1px 1px 4px  var(--cor4); /* Linha inferior da navbar */
+}
+
+.navbar ul 
+{
+    list-style: none; /* Remove bullets */
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 50px; /* Espaço entre os itens */
+}
+
+.navbar ul li 
+{
+    position: relative;
+}
+
+.navbar ul li a 
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333; /* Cor do texto */
+    text-transform: uppercase; /* Letras maiúsculas */
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover 
+{
+    color: var(--cor3); /* Cor ao passar o mouse */
+}
+
+.navbar ul li::after 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Posição da linha abaixo do texto */
+    height: 2px;
+    background-color: #00000000; /* Cor da linha */
+    transform: scaleX(0.2); /* Inicia a linha encolhida */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+.navbar ul li:hover::after 
+{  background-color: #000000; /* Cor da linha */
+    transform: scaleX(1); /* Expande a linha quando o mouse passa */
+}
+
+.Banner img 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*    RESPONSIVIDADE! */
+/* Telas maiores, desktops */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
