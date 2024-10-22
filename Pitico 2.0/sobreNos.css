@@ -26,8 +26,18 @@ body {
 }
 main
 {
-    margin: 0.6vw;
- 
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+main p
+{
+    text-align: center;
+}
+
+main h2 
+{
+    text-align: center;
 }
 
 header .container
@@ -55,7 +65,7 @@ header .container
     background-color: #ece9e9; /* Cor de fundo da navbar */
     padding: 15px 0;
     text-align: center;
-    box-shadow: 1px 1px 4px  var(--cor4); /* Linha inferior da navbar */
+    border: 2px solid #d9d9d9; /* Linha inferior da navbar */
 }
 
 .navbar ul 
@@ -95,7 +105,7 @@ header .container
     right: 0;
     bottom: -5px; /* Posição da linha abaixo do texto */
     height: 2px;
-    background-color: #00000000; /* Cor da linha */
+    background-color: #000000; /* Cor da linha */
     transform: scaleX(0.2); /* Inicia a linha encolhida */
     transition: transform 0.3s ease; /* Animação suave */
 }
@@ -110,6 +120,10 @@ header .container
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
 }
 
 /*    RESPONSIVIDADE! */
